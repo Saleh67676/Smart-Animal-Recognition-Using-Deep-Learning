@@ -42,21 +42,44 @@ It leverages **Transfer Learning** with the **MobileNetV2** architecture to achi
 
 ---
 
-## 🚀 How to Run
-
-### 1️⃣ Prerequisites
+🚀 How to Run
+1️⃣ Prerequisites
 Install the required libraries:
-
-pip install numpy tensorflow matplotlib
+bashpip install numpy tensorflow matplotlib
+```
 
 ---
-2️⃣ Dataset SetupMake sure your dataset is organized like this:Plaintextanimals/
+
+## 2️⃣ Dataset Setup
+
+Make sure your dataset is organized like this:
+```
+animals/
  ├── cat/
  ├── dog/
  ├── bat/
  ├── deer/
  ├── bear/
  └── ...
-Each subfolder represents one animal class1.All images should be in .jpg format22.+13️⃣ Training the ModelRun the training script or notebook (llm.ipynb). The model will:Preprocess: Resize images to $224 \times 224$3333.+1Freeze Layers: Use MobileNetV2 with frozen base layers4444.+1Train: Execute the training process for 15 epochs5555.+1Save: Export the final model as animal_cnn.keras6.4️⃣ Testing & InferenceThe testing script will:Random Selection: Pick a random image from the dataset7777.+1Predict: Use the trained model to predict the animal class8.Visualize: Display the image with its predicted label (e.g., Prediction: badger)9999
+Important notes:
 
+Each subfolder represents one animal class
+All images should be in .jpg format
+
+
+3️⃣ Training the Model
+Run the training script or notebook (llm.ipynb). The model will:
+
+Preprocess: Resize images to 224 × 224
+Freeze Layers: Use MobileNetV2 with frozen base layers
+Train: Execute the training process for 15 epochs
+Save: Export the final model as animal_cnn.keras
+
+
+4️⃣ Testing & Inference
+The testing script will:
+
+Random Selection: Pick a random image from the dataset
+Predict: Use the trained model to predict the animal class
+Visualize: Display the image with its predicted label (e.g., Prediction: badger)
 ```bash
