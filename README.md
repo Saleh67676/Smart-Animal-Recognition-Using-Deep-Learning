@@ -50,53 +50,13 @@ Install the required libraries:
 pip install numpy tensorflow matplotlib
 
 ---
-
-### 2️⃣ Dataset Setup
-Make sure your dataset is organized like this:
-
-bash
-animals/
+2️⃣ Dataset SetupMake sure your dataset is organized like this:Plaintextanimals/
  ├── cat/
  ├── dog/
  ├── bat/
  ├── deer/
  ├── bear/
  └── ...
-Each subfolder represents one animal class.
-All images should be in .jpg format.
-
----
-
-### 3️⃣ Training the Model
-Run the training script or notebook.
-The model will:
-
-Load and preprocess images
-
-Freeze MobileNetV2 base layers
-
-Train for 15 epochs
-
-Save the final model as:
-
-Copy code
-animal_cnn.keras
-
----
-
-### 4️⃣ Testing & Inference
-The testing script:
-
-Randomly selects an image from the dataset
-
-Applies preprocessing
-
-Uses the trained model to predict the class
-
-A window will display the image with its predicted label, for example:
-
-makefile
-Copy code
-Prediction: badger
+Each subfolder represents one animal class1.All images should be in .jpg format22.+13️⃣ Training the ModelRun the training script or notebook (llm.ipynb). The model will:Preprocess: Resize images to $224 \times 224$3333.+1Freeze Layers: Use MobileNetV2 with frozen base layers4444.+1Train: Execute the training process for 15 epochs5555.+1Save: Export the final model as animal_cnn.keras6.4️⃣ Testing & InferenceThe testing script will:Random Selection: Pick a random image from the dataset7777.+1Predict: Use the trained model to predict the animal class8.Visualize: Display the image with its predicted label (e.g., Prediction: badger)9999
 
 ```bash
