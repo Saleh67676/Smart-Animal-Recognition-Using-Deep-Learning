@@ -46,9 +46,10 @@ It leverages **Transfer Learning** with the **MobileNetV2** architecture to achi
 
 ### 1️⃣ Prerequisites
 Install the required libraries:
-```bash
+
 pip install numpy tensorflow matplotlib
-2️⃣ Dataset Setup
+
+###2️⃣ Dataset Setup
 Make sure your dataset is organized like this:
 
 bash
@@ -63,7 +64,7 @@ animals/
 Each subfolder represents one animal class.
 All images should be in .jpg format.
 
-3️⃣ Training the Model
+###3️⃣ Training the Model
 Run the training script or notebook.
 The model will:
 
@@ -77,7 +78,9 @@ Save the final model as:
 
 Copy code
 animal_cnn.keras
-4️⃣ Testing & Inference
+
+
+###4️⃣ Testing & Inference
 The testing script:
 
 Randomly selects an image from the dataset
@@ -91,3 +94,5 @@ A window will display the image with its predicted label, for example:
 makefile
 Copy code
 Prediction: badger
+
+```bash
