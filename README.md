@@ -54,7 +54,7 @@ pip install numpy tensorflow matplotlib
 ### 2️⃣ Dataset Setup
 Make sure your dataset is organized like this:
 
-Copy code
+bash
 animals/
  ├── cat/
  ├── dog/
