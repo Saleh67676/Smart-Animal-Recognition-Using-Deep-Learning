@@ -94,7 +94,3 @@ The testing script will:
 - **Visualize:** Display the image with its predicted label (e.g., `Prediction: badger`)
 
 ```bash
-# Example command
-bash
-```
-```bash
