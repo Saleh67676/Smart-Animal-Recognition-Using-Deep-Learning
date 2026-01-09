@@ -49,6 +49,8 @@ Install the required libraries:
 
 pip install numpy tensorflow matplotlib
 
+---
+
 ###2️⃣ Dataset Setup
 Make sure your dataset is organized like this:
 
@@ -63,6 +65,8 @@ animals/
  └── ...
 Each subfolder represents one animal class.
 All images should be in .jpg format.
+
+---
 
 ###3️⃣ Training the Model
 Run the training script or notebook.
@@ -79,6 +83,7 @@ Save the final model as:
 Copy code
 animal_cnn.keras
 
+---
 
 ###4️⃣ Testing & Inference
 The testing script:
