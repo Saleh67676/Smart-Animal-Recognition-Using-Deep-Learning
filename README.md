@@ -76,7 +76,7 @@ animals/
 
 ## 3️⃣ Training the Model
 
-Run the training script or notebook (`llm.ipynb`). The model will:
+Run the training notebook (`Smart_Animal_Classification.ipynb`). The model will:
 
 - **Preprocess:** Resize images to 224 × 224
 - **Freeze Layers:** Use MobileNetV2 with frozen base layers
