@@ -51,10 +51,9 @@ pip install numpy tensorflow matplotlib
 
 ---
 
-###2️⃣ Dataset Setup
+### 2️⃣ Dataset Setup
 Make sure your dataset is organized like this:
 
-bash
 Copy code
 animals/
  ├── cat/
@@ -68,7 +67,7 @@ All images should be in .jpg format.
 
 ---
 
-###3️⃣ Training the Model
+### 3️⃣ Training the Model
 Run the training script or notebook.
 The model will:
 
@@ -85,7 +84,7 @@ animal_cnn.keras
 
 ---
 
-###4️⃣ Testing & Inference
+### 4️⃣ Testing & Inference
 The testing script:
 
 Randomly selects an image from the dataset
