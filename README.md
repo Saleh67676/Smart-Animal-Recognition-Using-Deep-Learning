@@ -41,11 +41,14 @@ It leverages **Transfer Learning** with the **MobileNetV2** architecture to achi
   - Validation Accuracy ≈ **87.6%** (after 15 epochs)
 
 ---
+# 🚀 How to Run
 
-🚀 How to Run
-1️⃣ Prerequisites
+## 1️⃣ Prerequisites
+
 Install the required libraries:
-bashpip install numpy tensorflow matplotlib
+
+```bash
+pip install numpy tensorflow matplotlib
 ```
 
 ---
@@ -53,6 +56,7 @@ bashpip install numpy tensorflow matplotlib
 ## 2️⃣ Dataset Setup
 
 Make sure your dataset is organized like this:
+
 ```
 animals/
  ├── cat/
@@ -61,25 +65,36 @@ animals/
  ├── deer/
  ├── bear/
  └── ...
-Important notes:
+```
 
-Each subfolder represents one animal class
-All images should be in .jpg format
+**Important notes:**
 
+- Each subfolder represents one animal class
+- All images should be in `.jpg` format
 
-3️⃣ Training the Model
-Run the training script or notebook (llm.ipynb). The model will:
+---
 
-Preprocess: Resize images to 224 × 224
-Freeze Layers: Use MobileNetV2 with frozen base layers
-Train: Execute the training process for 15 epochs
-Save: Export the final model as animal_cnn.keras
+## 3️⃣ Training the Model
 
+Run the training script or notebook (`llm.ipynb`). The model will:
 
-4️⃣ Testing & Inference
+- **Preprocess:** Resize images to 224 × 224
+- **Freeze Layers:** Use MobileNetV2 with frozen base layers
+- **Train:** Execute the training process for 15 epochs
+- **Save:** Export the final model as `animal_cnn.keras`
+
+---
+
+## 4️⃣ Testing & Inference
+
 The testing script will:
 
-Random Selection: Pick a random image from the dataset
-Predict: Use the trained model to predict the animal class
-Visualize: Display the image with its predicted label (e.g., Prediction: badger)
+- **Random Selection:** Pick a random image from the dataset
+- **Predict:** Use the trained model to predict the animal class
+- **Visualize:** Display the image with its predicted label (e.g., `Prediction: badger`)
+
+```bash
+# Example command
+bash
+```
 ```bash
