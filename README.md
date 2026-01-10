@@ -93,4 +93,17 @@ The testing script will:
 - **Predict:** Use the trained model to predict the animal class
 - **Visualize:** Display the image with its predicted label (e.g., `Prediction: badger`)
 
+---
+
+## Pretrained Model
+
+Due to GitHub file size limits, the trained model is not stored in this repository.
+
+Download it from:
+https://drive.google.com/uc?export=download&id=1D2asuGFnCozCsxM_g5FRUqtEJKEs9jUP
+
+After downloading, place it in:
+model/animal_cnn.keras
+
+
 ```bash
